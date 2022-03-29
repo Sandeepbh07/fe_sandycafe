@@ -1,12 +1,11 @@
-import Layout from "./components/Layout/Layout";
+import Routers from "./components/Routes/Routers";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  return (
-    <div>
-      <Layout />
-    </div>
-  );
+  const renderApp = () => {
+    return <Routers />;
+  };
+  return <div>{renderApp()}</div>;
 }
 
 export default App;

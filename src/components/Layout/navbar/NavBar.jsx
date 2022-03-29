@@ -14,7 +14,7 @@ const NavBar = () => {
         Sand<span className='logo-label'>yC</span>af&egrave;
           </label>
       </a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style={{ backgroundColor:'var(--primary-green)' }}>
         <FontAwesomeIcon icon={faBars}/>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
