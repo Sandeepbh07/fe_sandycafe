@@ -1,0 +1,22 @@
+.footer {
+    color: var(--primary-alt-white);
+    background: var(--primary-navy) !important;
+    width: 100%;
+    min-height: 18vh;
+    padding: 10px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: var(--primary-alt-white);
+    margin: 2px;
+    padding: 2px;
+}
