@@ -1,5 +1,5 @@
 import React from 'react'
-import {faBars,faSearch,faCartPlus} from '@fortawesome/free-solid-svg-icons'
+import {faBars,faSearch} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css'
 import logo from '../../../assets/images/momo.jpg'
@@ -8,7 +8,7 @@ const NavBar = () => {
   const renderNavbar=()=>(
     <nav className="navbar navbar-expand-lg navbar-light">
     <div className="container">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="/home">
         <img src={logo} alt="Logo.." className='logo'/>
         <label htmlFor="" style={{ fontSize:'14px',fontWeight:'bold' }}>
         Sand<span className='logo-label'>yC</span>af&egrave;
@@ -20,16 +20,16 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Browse</a>
+            <a className="nav-link active" aria-current="page" href="/browse">Browse</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Sign In</a>
+            <a className="nav-link" href="/signin">Sign In</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Register</a>
+            <a className="nav-link" href="/register">Register</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Cart</a>
+            <a className="nav-link" href="/cart">Cart</a>
           </li>
         </ul>
         <form className="d-flex">
