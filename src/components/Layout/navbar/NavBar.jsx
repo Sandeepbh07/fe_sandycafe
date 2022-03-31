@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {faBars,faSearch} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './Navbar.css'
@@ -20,7 +21,7 @@ const NavBar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/browse">Browse</a>
+            <Link className={window.location.pathname==='/catalog'?"nav-link active":"nav-link"} aria-current="page" to="/catalog">Browse</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/signin">Sign In</a>
