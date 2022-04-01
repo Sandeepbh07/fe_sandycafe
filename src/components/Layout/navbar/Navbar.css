@@ -43,3 +43,11 @@ form input[type="text"] {
 .logo-label {
     font-size: 28px;
 }
+
+.user-profile {
+    background: var(--primary-navy);
+    color: var(--primary-white);
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+}

@@ -15,5 +15,6 @@
 .backdrop {
     background: rgba(0, 0, 0, 0.4);
     padding: 20px;
-    width: 100vh;
+    width: auto;
+    padding: 40px 20px;
 }

@@ -6,6 +6,7 @@ import Cart from '../Cart/Cart'
 import Signin from '../Auth/Signin/Signin'
 import Signup from '../Auth/Signup/Signup'
 import Signout from '../Auth/Signout/Signout'
+import Profile from '../Auth/Profile/Profile'
 
 const Routers = () => {
     const deployRoutes=()=>{
@@ -18,6 +19,7 @@ const Routers = () => {
                 <Route path='/cart' element={<Cart/>}/>
                 <Route path='/signup' element={<Signup/>}/>
                 <Route path='/signout' element={<Signout/>}/>
+                <Route path='/me' element={<Profile/>}/>
             </Routes>
         </Router>
        ) 

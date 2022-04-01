@@ -4,3 +4,12 @@
     align-items: center;
     text-align: center;
 }
+
+.spinner-with-backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-backdrop);
+}

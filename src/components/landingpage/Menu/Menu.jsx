@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import image1 from '../../../assets/addi-images/breakfast.jpg'
 import image2 from '../../../assets/addi-images/italian.jpg'
 import image3 from '../../../assets/addi-images/enchillidas.jpg'
@@ -9,7 +9,7 @@ const Menu = () => {
   const renderMenu = () => {
     return (
       <section>
-          <Typed className="typed-text" string={['Our Daily Specials','Burger Bonanza','Sumptous Salads','Southern Delicacies']} typeSpeed={40} loop backSpeed={60}/>
+          {/* <Typed className="typed-text" string={['Our Daily Specials','Burger Bonanza','Sumptous Salads','Southern Delicacies']} typeSpeed={40} loop backSpeed={60}/> */}
         <div className="container">
           <Link to="/catalog">
             <div className="d-flex justify-content-center align-items-center flex-wrap">
