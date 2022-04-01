@@ -7,6 +7,7 @@ import './Navbar.css'
 import logo from '../../../assets/images/momo.jpg'
 const NavBar = () => {
     const {isAuthenticated}=useAuth0()
+    const {user}=useAuth0()
   const renderNavbar=()=>(
     <nav className="navbar navbar-expand-lg navbar-light">
     <div className="container">
@@ -32,6 +33,9 @@ const NavBar = () => {
             <Link className="nav-link" to="/signup">Register</Link>
           </li>
           </> }
+          {isAuthenticated &&  <li className="nav-item">
+            <Link className={window.location.pathname==='/me'?"nav-link active":"nav-link"} to="/me"><span className='user-profile'>{user.name}</span></Link>
+          </li>}
           <li className="nav-item">
             <Link className={window.location.pathname==='/cart'?"nav-link active":"nav-link"} to="/cart">Cart</Link>
           </li>
