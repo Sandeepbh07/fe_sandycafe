@@ -50,3 +50,15 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--primary-purple);
     border-radius: 8px;
 }
+
+h4 {
+    font-family: "Roboto Regular", sans-serif !important;
+}
+
+h2 {
+    font-family: "Roboto Bold", sans-serif !important;
+}
+
+h5 {
+    font-family: "Roboto Regular", sans-serif !important;
+}
