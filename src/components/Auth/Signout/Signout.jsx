@@ -5,7 +5,7 @@ const Signout = () => {
     const { logout } = useAuth0();
     useEffect(()=>{
         logout()
-    },[])
+    },[])//eslint-disable-line react-hooks/exhaustive-deps
   return (
     <></>
   )

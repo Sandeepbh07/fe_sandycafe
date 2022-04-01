@@ -5,7 +5,7 @@ const Signin = () => {
     const { loginWithRedirect } = useAuth0();
     useEffect(()=>{
         loginWithRedirect()
-    },[])
+    },[]) //eslint-disable-line react-hooks/exhaustive-deps
   return (
     <></>
   )
